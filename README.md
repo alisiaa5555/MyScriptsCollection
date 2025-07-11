@@ -5,7 +5,7 @@ MyScriptsCollection/
 --README.md
 
 -- Linux:
-
+  - compressFiles.sh
 -- PowerShell:
 
   - AddEdgeExtensionInRegistry.ps1
