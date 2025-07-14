@@ -461,7 +461,7 @@ $GetNewUsers = ImportCsvUsers($GetNewUser)
         $PostUser = Invoke-RestMethod -Uri $PostUserUrl -Body $NewUser -Headers $autHeader -Method Post -ContentType 'application/json'  
         }
         catch {
-            Write-Error "Unable to post user with UPN: $($nus.userPrincipalName), MailNickname: $($nus.mailNickname), jobTitle: $($nus.jobTitle), department: $($nus.department), country: $($nus.country)" | Out-File "C:\Users\alicj\OneDrive\Dokumenty\Praca Inzynierska\Logs\PostUserErrorLog.txt" -Append
+            Write-Error "Unable to post user with UPN: $($nus.userPrincipalName), MailNickname: $($nus.mailNickname), jobTitle: $($nus.jobTitle), department: $($nus.department), country: $($nus.country)" | Out-File "C:\Users\...\Logs\PostUserErrorLog.txt" -Append
             $Error | Out-File "$errorPath\PostUserErrorLog.txt" -Append
             $PostNewUserError = $true
             $City = $($nus.City)
@@ -853,7 +853,7 @@ foreach ($exempl in $ExisitEmp){
 }}
 $ExisitingManagersID | ft -AutoSize
 
-$assignManagerPath = "C:\Users\alicj\OneDrive\Dokumenty\Praca Inzynierska\Logs\AssignManager.txt"
+$assignManagerPath = "C:\Users\...\Logs\AssignManager.txt"
 Start-Transcript -Path $assignManagerPath -Append
 foreach ($createduser in $CreatedNewUsers){
   $checkedUser = $false 
