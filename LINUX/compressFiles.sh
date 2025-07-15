@@ -26,7 +26,7 @@ while IFS="" read -r file1; do
         SIZE=$(stat -c %s "$file1")
         date=$(date +%Y.%m.%d::%H:%M:%S:%N)
         if [[ $SIZE -gt 1000000000 ]]; then
-                echo -e "$date:"$file1" has size of ${RED}${SIZE}${NC} and is bigger than 12000 bytes." >>compressedLogs.txt
+                echo -e "$date:"$file1" has size of ${RED}${SIZE}${NC} and is bigger than 1000000000 bytes." >>compressedLogs.txt
                 gzip "$file1"
                 echo "$date:File has been compressed.">>compressedLogs.txt
         else
