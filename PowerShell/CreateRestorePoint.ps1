@@ -11,7 +11,7 @@ In my case I used vssadmin Delete Shadows /For=C: /Oldest /Quiet to delete the o
 
 $CurrentTime=(Get-Date).ToString("yyyy/MM/dd hh/mm")
 $ChcpntName="My Restore Point $CurrentTime"
-$Logs = "C:\Users\alicj\OneDrive\Dokumenty\CheckPoint\CheckpointLogs.txt" 
+$Logs = "C:\Users\...\CheckPoint\CheckpointLogs.txt" 
 
 function CreateMyRestorePoint {
 <#
