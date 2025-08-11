@@ -37,7 +37,7 @@ if ($bakLastWrite -eq $null){
 }
 else {
     $timeDiff = NEW-TIMESPAN -Start $bakLastWrite –End $actualTime 
-    if ($timeDiff -ge $days){
+    if ($timeDiff.Days -ge $days){
     Write-Host "Time difference is $($timeDiff.days).Trying to backup the expenses database..." 
     Create_DB_Backup 
     }
