@@ -12,7 +12,7 @@ while true; do
         read PATH1
 
         if  test -d "$PATH1" ; then
-        echo ""$PATH1" exists."
+        echo "$PATH1" exists."
         break
     else
         echo "Provided path '$PATH1' doesn't exist. Please provide a correct path."
