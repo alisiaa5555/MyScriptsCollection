@@ -7,6 +7,11 @@ MyScriptsCollection/
   - Engineering Thesis.ps1
 -- Linux:
   - compressFiles.sh
+  - Monitor_service
+    - Monitor_service.sh
+    - 1.jpg
+    - 2.jpg
+    - 3.jpg
 
 
 -- PowerShell:
