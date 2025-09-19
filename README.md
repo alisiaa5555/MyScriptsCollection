@@ -8,6 +8,7 @@ MyScriptsCollection/
     
 -- Linux:
   - compressFiles.sh
+  - Copy subfolders with files.sh
   - Monitor_service
     - Monitor_service.sh
     - 1.jpg
