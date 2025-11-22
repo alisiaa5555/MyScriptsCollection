@@ -19,6 +19,9 @@ MyScriptsCollection/
 -- PowerShell:
 
   - AddEdgeExtensionInRegistry.ps1
+  - CreateWindowsRestorePoint.ps1
+  - Create_SQL_DB_Backup.ps1
+  - Get_User_Onenotes.ps1
   - RemoveEdgeExtensionFromRegistry.ps1
 
 -- SQL:
